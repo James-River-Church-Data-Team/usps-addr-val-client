@@ -252,7 +252,6 @@ class Validator {
 	constructor() {
 		this.#lastResult = null;
 		this.#abortController = null;
-		window.addEventListener("unload", () => this.#abortController?.abort());
 	}
 
 	/**
