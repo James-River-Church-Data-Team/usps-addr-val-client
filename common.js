@@ -179,7 +179,7 @@ function toTitleCase(str) {
 		// Special case for repeated letters: e.g.,
 		// "CC" remains all caps
 		.replace(/\b(.)\1+\b/gi, text => text.toUpperCase())
-		// Other acronyms that we know should be caps:
+		// Other acronyms we know about:
 		// - "PO" Box
 		// - "PMB" -- Private Mail Box
 		// - Diagonal cardinal directions
